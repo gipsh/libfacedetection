@@ -38,7 +38,7 @@ the use of this software, even if advised of the possibility of such damage.
 
 #pragma once
 
-#define _ENABLE_AVX2 //Please enable it if X64 CPU
+//#define _ENABLE_AVX2 //Please enable it if X64 CPU
 //#define _ENABLE_NEON //Please enable it if ARM CPU
 
 
@@ -47,6 +47,8 @@ int * facedetect_cnn(unsigned char * result_buffer, //buffer memory for storing 
 
 
 //DO NOT EDIT the following code if you don't really understand it.
+
+#include <typeinfo>
 
 #if defined(_ENABLE_AVX2)
 #include <immintrin.h>
